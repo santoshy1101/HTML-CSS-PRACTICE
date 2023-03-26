@@ -1,0 +1,23 @@
+body{
+   background-color: rgb(100,100,100);
+   color:#fff;
+    box-sizing: border-box;
+    background-image: url("/images/forest.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1,p{
+    margin: 25px 300px;
+    float: left;
+    font-family: tahoma;
+}
+
+h1{
+    font-size: 70px;
+}
+
+p{
+    font-size: 30px;
+}
