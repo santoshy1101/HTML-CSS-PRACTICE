@@ -1,0 +1,26 @@
+body{
+    background-image:url("/images/car1.jpg") ;
+    background-size: cover;
+}
+
+.box{
+width:800px;
+height: 500px;
+margin :100px auto 0px auto;
+border: 10px solid #fff;
+background-image: linear-gradient(45deg,rgba(225,0,0,1),rgba(225,0,0,0));
+}
+
+h1,p{
+    margin: 100px 100px 0px 60px;
+    float: left;
+    font-family: tahoma;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
