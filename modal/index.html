@@ -18,22 +18,67 @@
             color: white;
             padding: 10px 20px;
             border: none;
+            cursor: pointer;
+            border-radius:5px ;
+
+
         }
         .overlay{
             height: 100vh;
             width: 100%;
-            background: rgba(0, 0,0,0.5);
+            background: rgba(16, 15, 15, 0.5);
             position: fixed;
             top: 0%;
             z-index: -1;
             opacity: 0;
+            transition: 1s;
+        }
+
+        .loginform{
+            width: 350px;
+            background-color:white;
+            padding: 30px 20px;
+            position: absolute;
+            left:-50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 10px 3px #ccd;
+            transition: 2s;
+            z-index: 5;
+            border-radius:10px;
+        }
+        .loginform input{
+            width: 100%;
+            margin-bottom: 15px;
+            height: 35px;
+        }
+        .loginform span{
+            position: absolute;
+            right:0px;
+            top:0px;
+            width: 30px;
+            height: 30px;
+            background-color: green;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            cursor: pointer;
+            border-radius:5px ;
+        }
+        .showoverlay{
+            opacity: 1;
+            z-index: 1;
+        }
+        .showloginform{
+            left: 50%;
         }
     </style>
 </head>
 <body>
-    <button class="login-btn">Login</button>
-    <div class="overlay"></div>
+    <button class="login-btn" onclick="showModal()">Login</button>
+    <div class="overlay" onclick="closeModal()"  ></div>
     <div class="loginform">
+        <span onclick="closeModal()" >&times</span>
         <form action="">
             <div>
                 <label for="">UserName</label>
@@ -43,9 +88,24 @@
                 <label for="">Password</label>
                 <input type="password">
             </div>
-            <button>Login</button>
+            <button class="login-btn">Login</button>
         </form>
     </div>
     
 </body>
+<script>
+    function showModal(){
+        document.querySelector(".overlay").classList.add("showoverlay")
+        document.querySelector(".loginform").classList.add("showloginform")
+    }
+    function closeModal(){
+        document.querySelector(".overlay").classList.remove("showoverlay")
+        document.querySelector(".loginform").classList.remove("showloginform")
+    }
+
+    const btnlogin = document.querySelector(".btn-login"); // BUtton 
+    btnlogin.addEventListener("click",showModal) // Button Click
+
+
+</script>
 </html>
