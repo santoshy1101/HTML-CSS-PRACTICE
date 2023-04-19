@@ -1,0 +1,10 @@
+#navbar{
+display: flex;
+border: 1px solid gray;
+}
+
+#navbar div{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
