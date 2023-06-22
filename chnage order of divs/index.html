@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .container{
+                display: flex;
+                flex-direction: column;
+                width: 40px;
+            }
+            .container .card{
+                height: 40px;
+                width: 40;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                background-color: lightcoral;
+
+            }
+
+            .container .card:nth-child(1){
+                order: 2;
+            }
+            .container .card:nth-child(2){
+                order: 3;
+            }
+            .container .card:nth-child(3){
+                order: 4;
+            }
+            .container .card:nth-child(4){
+                order: 1;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+        </div>
+    </body>
+</html>
