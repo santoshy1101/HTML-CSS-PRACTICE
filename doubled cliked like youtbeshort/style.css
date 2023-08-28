@@ -21,7 +21,7 @@ body {
 
 .container {
   width: 350px;
-  height: 400px;
+  height: 450px;
   cursor: pointer;
   background-color: whitesmoke;
   border-radius: 10px;
@@ -33,7 +33,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
 }
 
 .container i {
